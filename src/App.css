@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+* {
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #282c34;
+	margin: 0;
+	line-height: 1.3;
+	background: #f2f2f2;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-header {
+	background-color: #282c34;
+	min-height: 5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #f2f2f2;
+	margin-bottom: 0.25em;
+	font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app-container {
+	text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.content-container {
+	margin: 1em;
+	text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+	margin: auto 0;
+}
+
+h1 {
+	margin: 0 0 0.25em 0;
+}
+
+h2 {
+	margin: 0 0 1em 0;
+}
+
+input[type="text"] {
+	height: 2em;
+	width: 400px;
+	padding: 0.5em;
+	margin: 0.5em 0.5em;
+	background: #f2f2f2;
+	border: 1px solid gray;
+	border-radius: 3px;
+}
+
+.btn {
+	height: 2.5em;
+	width: 7em;
+	text-align: center;
+	padding: 0.35em 0.9em;
+	margin: 0.5em 0;
+	border-radius: 5px;
+	background: rgba(0,104,213,1);
+	border: 2px solid transparent;
+	color: #f0f0f0;
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.btn:hover,
+.btn:focus {
+	background: rgba(0,104,213,0.8);
+	/*color: #282c34;*/
+}
+
+.btn:active {
+	border: 2px solid rgba(0,104,213,0.5);
+}
+
+.url-tester-container {
+	background: rgba(150,150,150,0.3);
+	border-radius: 10px;
+	padding: 1em;
+}
+
+.url-tester-results {
+	height: max-content;
+}
+
+.component {
+	margin-bottom: 1em;
+	padding: 1em;
+	border: 1px solid rgba(128,128,128,0.3);
+	border-radius: 5px;
+	background: #f9f9f9;
+}
+
+.results-container {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+	background: #ffffff;
+	border: 1px solid rgba(128,128,128,0.3);
+	border-radius: 3px;
+	min-height: 2.5em;
+	padding: 1em;
+}
+
+.input-group {
+	display: grid;
+	grid-template: 1fr / 80px 1fr;
+	margin: auto;
 }
